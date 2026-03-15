@@ -104,7 +104,7 @@ const Hero = ({ onOpenModal }: { onOpenModal: (type: string, data?: string) => v
         </div>
       </div>
       <div className="md:w-1/2 relative">
-        <img src="/resources/img01.jpg" alt="Happy Family" className="relative z-10 rounded-2xl shadow-2xl object-cover h-[300px] md:h-[450px] w-full" referrerPolicy="no-referrer" />
+        <img src="resources/img01.jpg" alt="Happy Family" className="relative z-10 rounded-2xl shadow-2xl object-cover h-[300px] md:h-[450px] w-full" referrerPolicy="no-referrer" />
       </div>
     </div>
   </div>
@@ -218,7 +218,7 @@ const CustomPackage = () => (
       </div>
       <div className="md:w-1/2 relative w-full">
         <div className="absolute inset-0 bg-gradient-to-tr from-emerald-100 to-transparent transform skew-x-12 -z-10"></div>
-        <img src="/resources/img01.jpg" alt="VR Gaming" className="rounded-xl shadow-xl object-cover h-[300px] w-full" referrerPolicy="no-referrer" />
+        <img src="resources/img01.jpg" alt="VR Gaming" className="rounded-xl shadow-xl object-cover h-[300px] w-full" referrerPolicy="no-referrer" />
       </div>
     </div>
   </div>
@@ -231,7 +231,7 @@ const ServiceVan = () => (
     
     <div className="container mx-auto px-8 flex flex-col md:flex-row items-center relative z-10">
       <div className="md:w-1/2 mb-10 md:mb-0 relative w-full">
-        <img src="/resources/img01.jpg" alt="Service Van" className="rounded-xl shadow-2xl object-cover h-[350px] w-full relative z-10" referrerPolicy="no-referrer" />
+        <img src="resources/img01.jpg" alt="Service Van" className="rounded-xl shadow-2xl object-cover h-[350px] w-full relative z-10" referrerPolicy="no-referrer" />
         <div className="absolute -bottom-6 -right-6 w-full h-full border-4 border-emerald-500 rounded-xl z-0 hidden sm:block"></div>
       </div>
       <div className="md:w-1/2 md:pl-20 text-center md:text-left">
@@ -460,12 +460,12 @@ const About = () => (
         <div className="lg:w-1/2 relative w-full">
           <div className="absolute -left-20 top-1/2 transform -translate-y-1/2 w-[600px] h-[600px] bg-emerald-50 rounded-full opacity-50 pointer-events-none"></div>
           
-          <img src="/resources/img01.jpg" alt="TV Shows" className="rounded-xl shadow-2xl w-4/5 object-cover h-[500px] relative z-10" referrerPolicy="no-referrer" />
+          <img src="resources/img01.jpg" alt="TV Shows" className="rounded-xl shadow-2xl w-4/5 object-cover h-[500px] relative z-10" referrerPolicy="no-referrer" />
           
-          <img src="/resources/img01.jpg" alt="Remote Control" className="absolute top-1/4 -right-4 w-2/5 rounded-xl shadow-2xl border-4 border-white object-cover h-[200px] z-20" referrerPolicy="no-referrer" />
+          <img src="resources/img01.jpg" alt="Remote Control" className="absolute top-1/4 -right-4 w-2/5 rounded-xl shadow-2xl border-4 border-white object-cover h-[200px] z-20" referrerPolicy="no-referrer" />
           
           <div className="absolute -bottom-10 -right-4 w-64 h-64 bg-emerald-600 rounded-full flex items-center justify-center border-8 border-white shadow-xl overflow-hidden z-30">
-            <img src="/resources/img01.jpg" alt="Happy User" className="w-full h-full object-cover opacity-90 mix-blend-overlay" referrerPolicy="no-referrer" />
+            <img src="resources/img01.jpg" alt="Happy User" className="w-full h-full object-cover opacity-90 mix-blend-overlay" referrerPolicy="no-referrer" />
             <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/2 bg-white p-3 rounded-full shadow-lg">
               <RouterIcon size={24} className="text-emerald-600" />
             </div>
@@ -664,7 +664,7 @@ const Services = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-100 to-red-50/30 z-0"></div>
         <div className="container mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">
-            <img src="/resources/img01.jpg" alt="Family watching TV" className="rounded-2xl shadow-2xl object-cover h-[400px] w-full" referrerPolicy="no-referrer" />
+            <img src="resources/img01.jpg" alt="Family watching TV" className="rounded-2xl shadow-2xl object-cover h-[400px] w-full" referrerPolicy="no-referrer" />
           </div>
           <div className="md:w-1/2 md:pl-16">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight mb-6">
@@ -732,7 +732,7 @@ const Services = () => {
             {/* Decorative Background Shape */}
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-red-50 rounded-[40px] rotate-12 -z-10 border border-red-100"></div>
             
-            <img src="/resources/img01.jpg" alt="Woman using laptop" className="relative z-10 w-4/5 object-cover rounded-2xl drop-shadow-2xl" referrerPolicy="no-referrer" />
+            <img src="resources/img01.jpg" alt="Woman using laptop" className="relative z-10 w-4/5 object-cover rounded-2xl drop-shadow-2xl" referrerPolicy="no-referrer" />
           </div>
         </div>
       </div>
