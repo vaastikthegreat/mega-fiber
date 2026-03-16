@@ -250,7 +250,7 @@ const Footer = () => (
         <p className="text-emerald-100">Stay up to update with our latest news and products.</p>
       </div>
       <div className="flex flex-col sm:flex-row w-full md:w-auto">
-        <input type="email" placeholder="Your Email Address" className="px-4 py-3 w-full md:w-64 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none text-slate-900" />
+        <input type="email" placeholder="shubham@gmail.com" className="px-4 py-3 w-full md:w-64 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none text-slate-900" />
         <button className="bg-slate-900 text-white px-6 py-3 rounded-b-md sm:rounded-r-md sm:rounded-b-none font-bold hover:bg-slate-800 transition-colors duration-500">
           Subscribe
         </button>
@@ -341,11 +341,11 @@ const Home = () => {
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your name" />
+                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Contact Number *</label>
-                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter mobile number" />
+                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="8737878701" />
               </div>
               {modalType === 'plan' && (
                 <div>
@@ -750,11 +750,11 @@ const Services = () => {
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your name" />
+                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Contact Number *</label>
-                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter mobile number" />
+                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="8737878701" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Installation Address *</label>
@@ -815,11 +815,11 @@ const ContactUs = () => (
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-              <input type="text" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter you name" />
+              <input type="text" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-              <input type="email" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your email" />
+              <input type="email" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="shubham@gmail.com" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
@@ -953,7 +953,7 @@ const Recharge = () => {
             <div className="space-y-5">
               <div>
                 <label className={labelClass}>Mobile Number:</label>
-                <input type="text" placeholder="Enter Mobile Number" className={inputClass} />
+                <input type="text" placeholder="8737878701" className={inputClass} />
               </div>
               <div>
                 <label className={labelClass}>Operator :</label>
