@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation, useNavigate 
 const TopBar = () => (
   <div className="hidden md:flex justify-end items-center py-2 px-8 bg-white text-sm text-gray-600 border-b">
     <div className="flex items-center space-x-6">
-      <span className="flex items-center"><Phone size={14} className="mr-2 text-emerald-600" /> Call: +91 - 8737878701</span>
+      <span className="flex items-center"><Phone size={14} className="mr-2 text-emerald-600" /> Call: +91 - 9355548880</span>
       <span className="flex items-center"><Mail size={14} className="mr-2 text-emerald-600" /> info@megafiber.in</span>
       <div className="flex space-x-3">
         <Facebook size={14} className="cursor-pointer hover:text-emerald-600 transition-colors duration-500" />
@@ -30,12 +30,15 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center py-4 px-4 md:px-8 bg-white sticky top-0 z-50 shadow-sm relative">
       <div className="flex items-center">
-        <Link to="/" className="flex items-center text-2xl font-bold text-slate-900">
+        {/* <Link to="/" className="flex items-center text-2xl font-bold text-slate-900">
           <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white mr-2">
             <Wifi size={24} />
           </div>
           Mega<span className="text-emerald-600">Fiber</span>
-        </Link>
+        </Link> */}
+        <Link to="/" className="flex items-center text-2xl font-bold text-slate-900">
+          <img src="mega-fiber-logo.png" alt="MegaFiber Logo" className="w-60" />
+          </Link>
       </div>
 
       {/* Desktop Menu */}
@@ -236,7 +239,7 @@ const ServiceVan = () => (
       </div>
       <div className="md:w-1/2 md:pl-20 text-center md:text-left">
         <h4 className="text-emerald-600 font-bold tracking-wider uppercase mb-2">We are at your service</h4>
-        <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">Call +91 - 8737878701</h2>
+        <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">Call +91 - 9355548880</h2>
       </div>
     </div>
   </div>
@@ -250,7 +253,7 @@ const Footer = () => (
         <p className="text-emerald-100">Stay up to update with our latest news and products.</p>
       </div>
       <div className="flex flex-col sm:flex-row w-full md:w-auto">
-        <input type="email" placeholder="shubham@gmail.com" className="px-4 py-3 w-full md:w-64 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none text-slate-900" />
+        <input type="email" placeholder="Your Email Address" className="px-4 py-3 w-full md:w-64 rounded-t-md sm:rounded-l-md sm:rounded-t-none focus:outline-none text-slate-900" />
         <button className="bg-slate-900 text-white px-6 py-3 rounded-b-md sm:rounded-r-md sm:rounded-b-none font-bold hover:bg-slate-800 transition-colors duration-500">
           Subscribe
         </button>
@@ -261,10 +264,13 @@ const Footer = () => (
 
     <div className="container mx-auto px-8 relative z-10 flex flex-col items-center">
       <div className="flex items-center text-3xl font-bold text-white mb-12">
-        <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white mr-3">
+        {/* <div className="w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-lg flex items-center justify-center text-white mr-3">
           <Wifi size={28} />
-        </div>
-        Mega<span className="text-emerald-500">Fiber</span>
+        </div> */}
+        {/* Mega<span className="text-emerald-500">Fiber</span> */}
+         <Link to="/" className="flex bg-white rounded items-center text-2xl font-bold text-slate-900">
+          <img src="mega-fiber-logo.png" alt="MegaFiber Logo" className="w-60" />
+          </Link>
       </div>
 
       <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-12 mb-12 text-gray-300">
@@ -272,7 +278,7 @@ const Footer = () => (
           <div className="w-10 h-10 rounded-full border border-emerald-500 flex items-center justify-center text-emerald-500 mr-4">
             <Phone size={18} />
           </div>
-          <span>+91 - 8737878701</span>
+          <span>+91 - 9355548880</span>
         </div>
         <div className="flex items-center">
           <div className="w-10 h-10 rounded-full border border-emerald-500 flex items-center justify-center text-emerald-500 mr-4">
@@ -284,7 +290,7 @@ const Footer = () => (
           <div className="w-10 h-10 rounded-full border border-emerald-500 flex items-center justify-center text-emerald-500 mr-4">
             <MapPin size={18} />
           </div>
-          <span className="text-center md:text-left">Block A , Mega Fiber , Noida 201301</span>
+          <span className="text-center md:text-left">Shop no 10, Pradhan Market Sector 122, Noida - 201301</span>
         </div>
       </div>
 
@@ -341,11 +347,11 @@ const Home = () => {
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
+                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your name" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Contact Number *</label>
-                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="8737878701" />
+                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter mobile number" />
               </div>
               {modalType === 'plan' && (
                 <div>
@@ -750,11 +756,11 @@ const Services = () => {
             <form onSubmit={handleSubmit} className="p-6 space-y-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
-                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
+                <input type="text" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your name" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Contact Number *</label>
-                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="8737878701" />
+                <input type="tel" required className="w-full px-4 py-2 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter mobile number" />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Installation Address *</label>
@@ -787,7 +793,7 @@ const ContactUs = () => (
               </div>
               <div>
                 <h4 className="font-bold text-slate-900">Our Location</h4>
-                <p className="text-gray-600">Block A , Mega Fiber , Noida 201301</p>
+                <p className="text-gray-600">Shop no 10, Pradhan Market Sector 122, Noida - 201301</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -796,7 +802,7 @@ const ContactUs = () => (
               </div>
               <div>
                 <h4 className="font-bold text-slate-900">Phone Number</h4>
-                <p className="text-gray-600">+91 - 8737878701</p>
+                <p className="text-gray-600">+91 - 9355548880</p>
               </div>
             </div>
             <div className="flex items-start">
@@ -815,11 +821,11 @@ const ContactUs = () => (
           <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
-              <input type="text" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Shubham Upadhyaya" />
+              <input type="text" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter you name" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-              <input type="email" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="shubham@gmail.com" />
+              <input type="email" className="w-full px-4 py-3 rounded-md border border-gray-200 focus:outline-none focus:ring-2 focus:ring-emerald-500" placeholder="Enter your email" />
             </div>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
@@ -953,7 +959,7 @@ const Recharge = () => {
             <div className="space-y-5">
               <div>
                 <label className={labelClass}>Mobile Number:</label>
-                <input type="text" placeholder="8737878701" className={inputClass} />
+                <input type="text" placeholder="Enter Mobile Number" className={inputClass} />
               </div>
               <div>
                 <label className={labelClass}>Operator :</label>
